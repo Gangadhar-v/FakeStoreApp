@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="290dp"
+    android:layout_margin="10dp">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="#EDE9E9"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+           >
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:transitionName="imageTransition"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/product_titletv"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:text="T Shirt"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/categorytv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:contentDescription="category"
+            android:text="men's clothing"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_ratingtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="4.7" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/img"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/product_costtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".5"
+                android:text="Rs 5400" />
+
+
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="0dp"-->
+<!--            android:text="Add to Cart"-->
+<!--            android:paddingVertical="1dp"-->
+<!--            android:paddingHorizontal="5dp"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            android:drawableLeft="@drawable/add"-->
+<!--            />-->
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
